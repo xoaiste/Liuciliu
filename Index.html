@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liuciliu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250,250,250,0.95);
+            border-bottom: 1px solid #e5e5e5;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222;
+            font-size: 15px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 30px;
+        }
+
+        .hero h1 {
+            font-size: clamp(60px, 12vw, 130px);
+            font-weight: 300;
+            letter-spacing: 8px;
+        }
+
+        .hero p {
+            color: #777;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 120px 30px;
+        }
+
+        section h2 {
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+
+        .about {
+            max-width: 700px;
+            font-size: 19px;
+            color: #555;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1 / 1;
+            background: #e8e8e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            border-top: 1px solid #e5e5e5;
+            color: #999;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">LIUCILIU</div>
+
+        <ul>
+            <li><a href="#pagrindinis">Pagrindinis</a></li>
+            <li><a href="#apie">Apie mus</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="pagrindinis">
+    <div>
+        <h1>Liuciliu</h1>
+        <p>Minimalistinis asmeninis pasaulis.</p>
+    </div>
+</section>
+
+<section id="apie">
+    <h2>Apie mus</h2>
+
+    <div class="about">
+        <p>
+            Sveiki atvykę į Liuciliu.
+            Tai mano asmeninė erdvė internete,
+            kurioje dalinuosi savo istorija,
+            mintimis ir akimirkomis.
+        </p>
+    </div>
+</section>
+
+<section id="galerija">
+    <h2>Galerija</h2>
+
+    <div class="gallery">
+        <div class="gallery-item">Nuotrauka 1</div>
+        <div class="gallery-item">Nuotrauka 2</div>
+        <div class="gallery-item">Nuotrauka 3</div>
+        <div class="gallery-item">Nuotrauka 4</div>
+        <div class="gallery-item">Nuotrauka 5</div>
+        <div class="gallery-item">Nuotrauka 6</div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Liuciliu
+</footer>
+
+</body>
+</html>
